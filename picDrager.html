@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js"></script>
+    <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/jquery.gridly.js" type="text/javascript"></script>
+    <script src="javascripts/picdrager.js" type="text/javascript"></script>
     <link href="stylesheets/jquery.gridly.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/picdrager.css" rel="stylesheet" type="text/css">
 
     <nav>
         <div class="buttons">
-            <input type="file" value="打开目录">
-        </div>
+            <input onchange="scandir(this.files)" title="选择文件夹" id="inputdir" multiple="" webkitdirectory="" accept="image/png" type="file">
         <div class="dirinfo">
-            当前处理的目录是: <span>xxxx</span>
+            当前处理的目录是: <span id="dirpath">xxxx</span>
         </div>
     </nav>
 

@@ -9,8 +9,9 @@ nav {
 }
 
 .buttons {
-    float: right;
+    /*float: right;*/
 }
+
 
 #draghere {
     border: 1px dashed #666;
