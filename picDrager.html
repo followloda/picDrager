@@ -14,6 +14,19 @@
     <link href="stylesheets/jquery.gridly.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/picdrager.css" rel="stylesheet" type="text/css">
 
+    <nav>
+        <div class="buttons">
+            <input type="file" value="打开目录">
+        </div>
+        <div class="dirinfo">
+            当前处理的目录是: <span>xxxx</span>
+        </div>
+    </nav>
+
+    <div id="draghere" ondrop="dropHandler(event)" ondragover="allowDrop(event)" >
+        将目录拖放到此处
+    </div>
+
     <div class="gridly">
         <div class="brick small" style="background: #D35400"></div>
         <div class="brick small" style="background: #ed23d0"></div>
