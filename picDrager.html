@@ -9,45 +9,20 @@
 </head>
 
 <body>
-    <script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js"></script>
+    <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/jquery.gridly.js" type="text/javascript"></script>
+    <script src="javascripts/picdrager.js" type="text/javascript"></script>
     <link href="stylesheets/jquery.gridly.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/picdrager.css" rel="stylesheet" type="text/css">
 
-    <style>
-        .gridly {
-            position: relative;
-            width: 620px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .brick.small {
-            width: 140px;
-            height: 140px;
-        }
-
-        .brick.large {
-            width: 300px;
-            height: 300px;
-        }
-    </style>
+    <nav>
+        <div class="buttons">
+            <input onchange="scandir(this.files)" title="选择文件夹" id="inputdir" multiple="" webkitdirectory="" accept="image/png" type="file">
+    </nav>
 
     <div class="gridly">
-        <div class="brick small" style="background: #D35400"></div>
-        <div class="brick small" style="background: #ed23d0"></div>
-        <div class="brick small" style="background: #D35400"></div>
-        <div class="brick small" style="background: #34495E"></div>
-        <div class="brick small" style="background: #2ECC71"></div>
-        <div class="brick small" style="background: #2980B9"></div>
+        <!--放置可拖拽的图片-->
     </div>
-
-    <script>
-        $('.gridly').gridly({
-            // base: 60, // px
-            // gutter: 10, // px
-            columns: 8
-        });
-    </script>
 </body>
 
 </html>
