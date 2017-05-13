@@ -12,37 +12,6 @@ nav {
     /*float: right;*/
 }
 
-<<<<<<< HEAD
-
-#draghere {
-    border: 1px dashed #666;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    text-align: center;
-    padding: 100px;
-}
-
-.gridly {
-    display: none;
-    position: relative;
-    width: 620px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.brick.small {
-    width: 140px;
-    height: 140px;
-}
-
-.brick.large {
-    width: 300px;
-    height: 300px;
-}
-=======
 .gridly {
     /*display: none;*/
     position: relative;
@@ -60,4 +29,3 @@ nav {
     width: 405px;
     height: 539px;
 }*/
->>>>>>> 4513d10d88faf1fda6b79c2537e6cc0ebadce482
