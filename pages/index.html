@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pic Drager</title>
+    <script src="../javascripts/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#draghere").click(function(){
+                $("#inputdir").click();
+                
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <script src="../javascripts/jquery.gridly.js" type="text/javascript"></script>
+    <script src="../javascripts/picdrager.js" type="text/javascript"></script>
+    <link href="../stylesheets/jquery.gridly.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/picdrager.css" rel="stylesheet" type="text/css">
+
+    <nav>
+    <div style="display: none;">
+        <input type="file" id="inputdir" title="choose file...">
+    </div>
+    </nav>
+
+    <div id="draghere" ondrop="dropHandler(event)" ondragover="allowDrop(event)" >
+        将目录拖放到此处
+    </div>
+
+    <div class="gridly">
+        <div class="brick small" style="background: #D35400"></div>
+        <div class="brick small" style="background: #ed23d0"></div>
+        <div class="brick small" style="background: #D35400"></div>
+        <div class="brick small" style="background: #34495E"></div>
+        <div class="brick small" style="background: #2ECC71"></div>
+        <div class="brick small" style="background: #2980B9"></div>
+    </div>
+
+    <script>
+        $('.gridly').gridly({
+            // base: 60, // px
+            // gutter: 10, // px
+            columns: 8
+        });
+    </script>
+</body>
+
+</html>
